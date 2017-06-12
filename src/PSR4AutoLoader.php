@@ -26,7 +26,7 @@ class PSR4AutoLoader
      * @param string|null $basePath  Base directory
      * @param string|null $prefix    Namespace prefix
      */
-    public function __construct(string $basePath = null, string $prefix = null)
+    public function __construct($basePath = null, $prefix = null)
     {
         $this->prefix = $prefix;
 
@@ -42,7 +42,7 @@ class PSR4AutoLoader
      *
      * @return bool
      */
-    public function register(): bool
+    public function register()
     {
         return spl_autoload_register([$this, 'load']);
     }
@@ -52,7 +52,7 @@ class PSR4AutoLoader
      * 
      * @return bool
      */
-    public function unregister(): bool
+    public function unregister()
     {
         return spl_autoload_unregister([$this, 'load']);
     }
@@ -64,7 +64,7 @@ class PSR4AutoLoader
      *
      * @return string
      */
-    public function trimPrefix(string $className): string
+    public function trimPrefix($className)
     {
         // Remove leading namespace separator
         $className = ltrim($className, $this->namespaceSeparator);
@@ -91,7 +91,7 @@ class PSR4AutoLoader
      *
      * @return null|string
      */
-    public function getNamespace(string $className, bool $trimPrefix = false): ?string
+    public function getNamespace($className, $trimPrefix = false)
     {
         // Remove prefix or leading namespace separator
         $className = $trimPrefix ? $this->trimPrefix($className) : ltrim($className, $this->namespaceSeparator);
@@ -113,7 +113,7 @@ class PSR4AutoLoader
      *
      * @return string
      */
-    public function getClass(string $className): string
+    public function getClass($className)
     {
         // Remove leading namespace separator
         $className = ltrim($className, $this->namespaceSeparator);
@@ -133,7 +133,7 @@ class PSR4AutoLoader
      *
      * @return string
      */
-    public function getPath(string $className): string
+    public function getPath($className)
     {
         $fileName = $this->basePath;
 
@@ -152,7 +152,7 @@ class PSR4AutoLoader
      *
      * @param $className  Fully-qualified class name
      */
-    public function load(string $className): void
+    public function load($className)
     {
         require $this->getPath($className);
     }
