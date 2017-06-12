@@ -1,0 +1,23 @@
+{
+    "name": "rooc/psr4_auto_loader",
+    "description": "Implementation of the PSR-4 autoloading standard",
+    "license": "MIT",
+    "keywords": ["psr-4", "autoloading"],
+    "authors": [
+        {
+            "name": "Ilya Rooc",
+            "email": "roocster@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rooc\\PSR4AutoLoader\\": "src/"
+        }
+    }
+}
