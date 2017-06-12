@@ -42,7 +42,7 @@ class PSR4AutoLoaderTest extends PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers PSR4AutoLoader::getPath
+     * @covers Rooc\PSR4AutoLoader\PSR4AutoLoader::getPath
      * @dataProvider classNamesProvider
      * 
      * @param type $className  Fully-qualified class name
