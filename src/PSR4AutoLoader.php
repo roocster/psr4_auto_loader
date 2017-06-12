@@ -7,7 +7,7 @@ namespace Rooc\PSR4AutoLoader;
  * Implementation of the PSR-4 autoloading standard
  * http://www.php-fig.org/psr/psr-4/
  *
- * @version 2.0
+ * @version 1.0
  * 
  * @author  Ilya Rooc <roocster@gmail.com>
  * @license https://opensource.org/licenses/MIT MIT
