@@ -24,7 +24,7 @@ composer require "rooc/psr4_auto_loader"
 For example, in the project root we have "src" folder that contains our own code of classes, interfaces, traits etc. Let's load all of them:
 
 ```php
-$autoLoader = new \Rooc\PSR4AutoLoader\PSR4AutoLoader('/src', 'App');
+$autoLoader = new \Rooc\PSR4AutoLoader\PSR4AutoLoader('./src', 'App');
 $autoLoader->register();
 ```
 
@@ -34,10 +34,10 @@ If your code are in several directories, e. g. "Classes" and "Interfaces", you n
 use Rooc\PSR4AutoLoader\PSR4AutoLoader;
 
 // Load classes
-(new PSR4AutoLoader('/Classes', 'App'))->register();
+(new PSR4AutoLoader('./Classes', 'App'))->register();
 
 // Load interfaces
-(new PSR4AutoLoader('/Interfaces', 'App'))->register();
+(new PSR4AutoLoader('./Interfaces', 'App'))->register();
 ```
 
 > Note that you should follow the PSR-4 class naming rules: http://www.php-fig.org/psr/psr-4/#specification
