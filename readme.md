@@ -4,11 +4,11 @@ Implementation of the [PSR-4 autoloading standard](http://www.php-fig.org/psr/ps
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.1-8892BF.svg)](https://php.net/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.0-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-2.0-brightgreen.svg)](https://github.com/roocster/psr4_auto_loader/)
 
 ### Requirements
 
- - PHP >=7.1 (for PHP >=5.6 support use version 1.0)
+ - PHP >=7.1 (for PHP >=5.6 support use [version 1.0](https://github.com/roocster/psr4_auto_loader/tree/v1))
  - PHPUnit >=5.7 (for running tests)
 
 ### Installation
